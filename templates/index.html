@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Скачати з YouTube</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Завантажити відео з YouTube</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Вставте посилання на відео" required>
+            <button type="submit">Скачати</button>
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
